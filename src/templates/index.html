@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Planner - Flask</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
+    <style>
+        /* Tab styling */
+        .tab-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .tab-buttons {
+            display: flex;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .tab-button {
+            padding: 10px 15px;
+            background-color: #f1f1f1;
+            border: none;
+            cursor: pointer;
+            flex-grow: 1;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .tab-button:hover {
+            background-color: #ddd;
+        }
+        
+        .tab-button.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 15px 0;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Message styling */
+        #recalibration-message, #optimization-message {
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: none;
+        }
+        
+        .message-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .message-warning {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+        
+        .message-info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        
+        /* Community center marker */
+        .marker-cc-all {
+            background-color: #9C27B0; /* Purple for community centers */
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        /* Community center sidebar item */
+        .center-item {
+            background-color: rgba(156, 39, 176, 0.2); /* Light purple */
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <h2>Route Planner</h2>
+            
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="p2f">People to Food</button>
+                    <button class="tab-button" data-tab="f2p">Food to People</button>
+                </div>
+                
+                <!-- P2F Tab Content -->
+                <div id="p2f-tab" class="tab-content active">
+                    <div>
+                        <h3>Grocery Store</h3>
+                        <form id="grocery-store-form-container" style="display: none;">
+                            <input type="number" id="gs-latitude" name="latitude" placeholder="Latitude" step="any" required>
+                            <input type="number" id="gs-longitude" name="longitude" placeholder="Longitude" step="any" required>
+                            <button type="button" id="add-grocery-store-button">Add Grocery Store</button>
+                        </form>
+                        <div id="p2f-grocery-stores-display"></div>
+                    </div>
+            
+                    <div>
+                        <h3>Transit Stops</h3>
+                        <form id="transit-stop-form-container" style="display: none;">
+                            <input type="number" id="ts-latitude" name="latitude" placeholder="Latitude" step="any" required>
+                            <input type="number" id="ts-longitude" name="longitude" placeholder="Longitude" step="any" required>
+                            <input type="number" id="ts-demand" name="demand" placeholder="Demand" min="1" required>
+                            <button type="button" id="add-transit-stop-button">Add Transit Stop</button>
+                        </form>
+                        <div id="transit-stops-list" class="transit-stops-list"></div>
+                    </div>
+            
+                    <div>
+                        <h3>Bus Configuration</h3>
+                        <label for="bus-capacity">Bus Capacity:</label>
+                        <input type="number" id="bus-capacity" name="bus_capacity" value="15" min="1" required>
+                    </div>
+
+                    <button id="run-p2f-optimization-button" class="run-button" disabled>Run P2F Optimization</button>
+                    <button id="recalibrate-button" class="run-button" disabled>Recalibrate</button>
+                    <div id="recalibration-message"></div>
+                </div>
+                
+                <!-- F2P Tab Content -->
+                <div id="f2p-tab" class="tab-content">
+                    <div>
+                        <h3>Grocery Store (Load Points)</h3>
+                        <div id="f2p-grocery-stores-display"></div>
+                    </div>
+            
+                    <div>
+                        <h3>Community Centers (Unload Points)</h3>
+                        <div id="community-centers-list" class="community-centers-list"></div>
+                    </div>
+            
+                    <div>
+                        <h3>Truck Configuration</h3>
+                        <label for="truck-capacity">Truck Capacity (cubic feet):</label>
+                        <input type="number" id="truck-capacity" name="truck_capacity" value="270" min="1" required>
+                    </div>
+
+                    <button id="run-f2p-optimization-button" class="run-button" disabled>Run F2P Optimization</button>
+                    <button id="recalibrate-f2p-button" class="run-button" disabled>Recalibrate</button>
+                    <div id="f2p-recalibration-message"></div>
+                    <div id="optimization-message"></div>
+                </div>
+            </div>
+    
+            <div id="schedule-container" class="schedule-table-container">
+                <h3>Weekly Schedule</h3>
+                <div id="schedule-table">
+                    <p>No schedule generated yet, or no trips planned.</p>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="map-container"></div>
+    </div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <script src="{{ url_for("static", filename="js/app.js") }}"></script>
+</body>
+</html>

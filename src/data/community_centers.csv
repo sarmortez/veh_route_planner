@@ -1,0 +1,102 @@
+candid cc code,candid cc type,candid cc name,block group,longitude,latitude,neighborhoodId,demand
+ccc120950005,school,primrose school,120950170152,-81.45129,28.35398,"('12095', ""hunter's creek"")",21.526062016283593
+ccc120950022,school,eastlake elementary school,120950165143,-81.17007,28.59532,"('12095', 'east orange county')",10.868673006327445
+ccc120950041,church,church of god,120950166042,-81.00717,28.53688,"('12095', 'east orange county')",0.0
+ccc120950044,school,stoneybrook academy,120950171171,-81.61873,28.51794,"('12095', 'johns lake')",5.600969053872479
+ccc120950045,school,foundation academy,120950171131,-81.61717,28.50734,"('12095', 'horizon west')",4.761550918879212
+ccc120950046,school,independence elementary school,120950171132,-81.60633,28.46641,"('12095', 'horizon west')",18.216165432587577
+ccc120950047,school,bridgewater middle school,120950171131,-81.61161,28.48124,"('12095', 'horizon west')",6.55960076300198
+ccc120950048,school,lake whitney elementary school,120950171202,-81.55798,28.526,"('12095', 'lake butler')",6.020473180894104
+ccc120950049,school,windermere elementary school,120950171151,-81.54371,28.50777,"('12095', 'lake butler')",12.53252195805861
+ccc120950050,school,thronebrooke elementary school,120950148141,-81.53476,28.52501,"('12095', 'lake butler')",2.941919985797976
+ccc120950051,school,premiere academy,120950148042,-81.51521,28.52773,"('12095', 'west orlando')",2.657067992973793
+ccc120950052,school,hope charter school,120950174012,-81.56016,28.59218,"('12095', 'lake apopka')",4.57329980662785
+ccc120950053,school,tildenville elementary school,120950173011,-81.60834,28.55741,"('12095', 'lake apopka')",20.90133341490108
+ccc120950054,school,victory christian academy,120950150033,-81.52358,28.58483,"('12095', 'west orlando')",0.0
+ccc120950055,school,radiant life academy,120950151052,-81.49528,28.61264,"('12095', 'clarcona')",6.015326955049778
+ccc120950056,school,lake gem elementary school,120950123032,-81.48849,28.60267,"('12095', 'hiawassee')",7.310248453834127
+ccc120950057,church,citrus church-horizon west,120950171134,-81.62386,28.4725,"('12095', 'horizon west')",0.048634082554393235
+ccc120950058,church,first baptist church windermere-lakeside campus,120950171103,-81.5517,28.44424,"('12095', 'disney')",14.510363549229139
+ccc120950059,church,salem lutheran church,120950171092,-81.49989,28.45138,"('12095', 'bay hill')",12.996584700375573
+ccc120950060,church,christ community church,120950148102,-81.50833,28.47864,"('12095', 'lake tibet')",4.708878883301186
+ccc120950061,church,crown of glory lutheran church,120950148152,-81.50845,28.51136,"('12095', 'lake tibet')",7.749810592338961
+ccc120950062,church,mosaic church,120950172002,-81.63662,28.55447,"('12095', 'lake apopka')",23.552860325939633
+ccc120950063,church,anointed ground church,120950172001,-81.62376,28.55469,"('12095', 'lake apopka')",35.904518156765675
+ccc120950064,church,west orlando baptist church,120950150011,-81.5609,28.5822,"('12095', 'west orlando')",5.38529873087035
+ccc120950065,school,starchild academy,120950178051,-81.46777,28.70778,"('12095', 'alaqua')",0.0
+ccc120950066,school,clay springs elementary school,120950178081,-81.4679,28.68924,"('12095', 'apopka')",39.83381297627091
+ccc120950067,school,wolf lake elementary school,120950178131,-81.54305,28.72809,"('12095', 'apopka')",1.38516
+ccc120950068,school,rock springs elementary school,120950178091,-81.50908,28.71992,"('12095', 'apopka')",0.0
+ccc120950069,school,springs community christian academy,120950178091,-81.50979,28.7192,"('12095', 'apopka')",0.0
+ccc120950072,church,wekiwa springs baptist church,120950178062,-81.46793,28.69099,"('12095', 'apopka')",37.45223352085796
+ccc120950073,church,first covenant church,120950157021,-81.33053,28.62498,"('12095', 'maitland')",22.27246
+ccc120950089,school,innovation middle school,120950167372,-81.21027,28.42364,"('12095', 'east orange county')",13.067255243713133
+ccc120950090,school,einstein academy,120950167351,-81.25696,28.43525,"('12095', 'lake nona')",7.208035368366308
+ccc120950091,school,stone lakes elementary school,120950167494,-81.16272,28.51159,"('12095', 'alafaya')",0.10294836696965028
+ccc120950092,school,avalon middle school,120950167312,-81.15231,28.50094,"('12095', 'alafaya')",9.466914471387003
+ccc120950093,school,andover elementary school,120950167531,-81.22104,28.50991,"('12095', 'alafaya')",1.2408432899799993
+ccc120950094,school,northlake park elementary school,120950168023,-81.26156,28.42183,"('12095', 'lake nona')",7.326159749440897
+ccc120950095,school,sunrise elementary school,120950167461,-81.17761,28.53245,"('12095', 'alafaya')",1.9177633309608542
+ccc120950096,school,cypress springs elementary school,120950167522,-81.23702,28.51562,"('12095', 'cypress springs')",4.680584734522669
+ccc120950097,school,lawton chiles elementary school,120950167241,-81.22611,28.55148,"('12095', 'cypress springs')",10.695763199972772
+ccc120950098,school,camelot elementary school,120950167452,-81.16222,28.54956,"('12095', 'waterford')",2.628613894324853
+ccc120950099,church,spring of life united methodist church,120950167372,-81.22333,28.41463,"('12095', 'east orange county')",1.3786108040981062
+ccc120950100,church,friends community church,120950167243,-81.24425,28.54111,"('12095', 'cypress springs')",19.68821210508675
+ccc120950101,church,redeemer church at lake nona,120950167351,-81.23521,28.43414,"('12095', 'lake nona')",20.41960488784998
+ccc120950102,church,liberty baptist church,120950167134,-81.24475,28.55372,"('12095', 'union park')",8.684227439912519
+ccc120970001,school,westside k-8,120970408112,-81.64758,28.31874,"('12097', 'four corners')",0.0
+ccc120970002,school,harmony community school,120970438012,-81.15465,28.20164,"('12097', 'harmony')",11.766328558831285
+ccc120970003,school,canoe creek charter academy,120970432072,-81.28771,28.18707,"('12097', 'west palmdale')",21.970741592396664
+ccc120970004,school,harmony high school,120970438021,-81.15254,28.18932,"('12097', 'osceola south')",0.37364375267326344
+ccc120970006,school,st luke & st peter's preschool,120970433031,-81.29294,28.219,"('12097', 'st cloud')",7.23951288578905
+ccc120970007,church,c3-confessors of christ church,120970408122,-81.65355,28.27372,"('12097', 'happy trails')",7.125295174967297
+ccc120970008,church,oak hill baptist church,120970408011,-81.60974,28.26016,"('12097', 'celebration')",0.0
+ccc120970009,church,corpus christi catholic church,120970408081,-81.54793,28.31308,"('12097', 'celebration')",12.757123748961815
+ccc120970010,church,illuminate church,120970408082,-81.56912,28.30016,"('12097', 'celebration')",1.7434285152583697
+ccc120970011,church,canoe creek christian church,120970433042,-81.27754,28.19402,"('12097', 'west palmdale')",5.109635524837134
+ccc120970012,church,crossroads baptist church,120970433041,-81.27215,28.18106,"('12097', 'west palmdale')",11.766079204397393
+ccc120970013,church,northeast christian church,120970429041,-81.3271,28.27885,"('12097', 'remington')",18.814729301900325
+ccc120970015,church,neptune road baptist church,120970431001,-81.37796,28.28527,"('12097', 'neo city')",30.959554214326978
+ccc120970016,church,faith baptist church,120970431002,-81.36281,28.27816,"('12097', 'neo city')",0.0
+ccc120970017,church,cornerstone baptist church,120970433042,-81.29289,28.20971,"('12097', 'west palmdale')",7.005736072098623
+ccc120970018,church,grace community church,120970437002,-81.21875,28.2432,"('12097', 'narcoossee')",3.6892597414906283
+ccc120970019,church,east coast believers church,120970428002,-81.29426,28.33461,"('12097', 'boggy creek')",3.692474799948606
+ccc121170020,school,little flower academy,121170221062,-81.30734,28.65321,"('12117', 'casselberry')",38.3566386084894
+ccc121170021,school,howell branch academy,121170222062,-81.29026,28.6238,"('12117', 'lake howell')",36.22662033553328
+ccc121170023,school,carillon elementary school,121170213152,-81.18076,28.62326,"('12117', 'oviedo')",12.946863136932606
+ccc121170024,school,new covenant preschool,121170214032,-81.27496,28.66877,"('12117', 'winter springs')",32.10342177008782
+ccc121170025,school,bridges academy,121170213061,-81.26167,28.6751,"('12117', 'winter springs')",22.053666773678266
+ccc121170026,school,stenstrom elementary school,121170213211,-81.19016,28.65455,"('12117', 'oviedo')",1.6477698224127373
+ccc121170027,school,partin elementary school,121170212031,-81.15644,28.65039,"('12117', 'live oak reserve')",17.26747340861416
+ccc121170028,school,lake howell high school,121170222073,-81.27424,28.63713,"('12117', 'lake howell')",62.74780233302878
+ccc121170029,school,walker elementary school,121170212061,-81.12603,28.64884,"('12117', 'east seminole country')",2.508929213125039
+ccc121170030,school,double r private school,121170212061,-81.11451,28.65362,"('12117', 'east seminole country')",3.0959455002325504
+ccc121170031,church,east coast believers church 2,121170213172,-81.24857,28.62003,"('12117', 'oviedo')",0.0
+ccc121170032,church,willow creek church,121170221063,-81.28149,28.66217,"('12117', 'casselberry')",10.645879049610262
+ccc121170033,church,oviedo presbyterian church,121170213161,-81.17336,28.63701,"('12117', 'live oak reserve')",53.94624552121719
+ccc121170034,church,cornerstone community church,121170213182,-81.26588,28.63025,"('12117', 'lake howell')",0.0
+ccc121170035,church,st luke's lutheran church,121170213142,-81.23112,28.64628,"('12117', 'oviedo')",8.11473184011027
+ccc121170036,church,epiphany lutheran church,121170222073,-81.26663,28.64107,"('12117', 'lake howell')",33.14406352310223
+ccc121170037,church,st mary & archangel michael coptic orthodox church,121170212014,-81.16472,28.6852,"('12117', 'east seminole country')",1.4679410798642394
+ccc121170038,church,action church,121170222065,-81.28713,28.63328,"('12117', 'lake howell')",0.0
+ccc121170039,church,grace church,121170213072,-81.27123,28.65191,"('12117', 'winter springs')",6.542627960848096
+ccc121170040,church,river run christian church,121170212031,-81.13052,28.61422,"('12117', 'live oak reserve')",2.578055544201965
+ccc121170042,church,first baptist church of chuluota,121170212051,-81.12686,28.62946,"('12117', 'east seminole country')",6.295928908241559
+ccc121170043,church,geneva church of christ,121170212011,-81.11721,28.74165,"('12117', 'east seminole country')",7.963402395581397
+ccc121170070,school,sweetwater oaks nursery school,121170216091,-81.4203,28.70494,"('12117', 'alaqua')",21.277704934388435
+ccc121170071,school,south seminole middle school,121170221043,-81.32014,28.66203,"('12117', 'casselberry')",13.662536123120693
+ccc121170074,church,compass community church,121170217083,-81.44308,28.64688,"('12117', 'bear lake')",1.229277432513497
+ccc121170075,church,orlando grace church,121170218063,-81.3663,28.6463,"('12117', 'altamonte springs')",19.55456385525071
+ccc121170076,church,first baptist church of casselberry,121170221041,-81.32112,28.6768,"('12117', 'casselberry')",9.571431853942492
+ccc121170077,church,st mark's presbyterian church usa,121170219022,-81.37377,28.68263,"('12117', 'altamonte springs')",11.228396426058108
+ccc121170078,church,starlight baptist church,121170214043,-81.29357,28.68838,"('12117', 'highlands')",1.0166470759360071
+ccc121170079,church,a new beginning-pentecostal church of god,121170216171,-81.38446,28.71253,"('12117', 'wekiva springs')",5.489382234055277
+ccc121170080,church,longwood hills congregational church,121170215051,-81.36687,28.71283,"('12117', 'longwood')",3.7450164355206903
+ccc121170081,church,st. petka serbian orthodox church,121170208081,-81.35872,28.72596,"('12117', 'longwood lakes')",4.336201841625725
+ccc121170082,church,markham woods prebyterian church,121170207031,-81.38081,28.77561,"('12117', 'alaqua')",6.603759561529862
+ccc121170083,church,lighthouse baptist church,121170207072,-81.37849,28.79331,"('12117', 'saint josephs')",0.0
+ccc121170084,church,blessed house international church,121170208034,-81.33474,28.7458,"('12117', 'lake mary')",7.334344199886262
+ccc121170085,church,church of jesus christ of latter-day saints,121170208114,-81.3586,28.73571,"('12117', 'greenwood lakes')",0.0
+ccc121170086,church,sent church,121170208111,-81.33428,28.7341,"('12117', 'greenwood lakes')",5.128996727047399
+ccc121170087,church,seminole community church,121170207071,-81.34957,28.82603,"('12117', 'saint josephs')",2.5715694650393877
+ccc121170088,church,crossings community church,121170207072,-81.36453,28.80558,"('12117', 'saint josephs')",2.0287610242538556
