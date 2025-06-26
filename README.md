@@ -4,9 +4,9 @@
 **Navigate to the Project Directory:**
 
 Use the `cd` command to navigate into the extracted `veh_route_planner` directory.
-    ```bash
-    cd path/to/your/veh_route_planner
-    ```
+```bash
+cd path/to/your/veh_route_planner
+```
 
 **Create and Activate a Virtual Environment (Recommended):**
 
@@ -16,9 +16,9 @@ Use the `cd` command to navigate into the extracted `veh_route_planner` director
 
 **Install Dependencies:**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+pip install -r requirements.txt
+```
 
 **Mapbox Access Token :**
 
@@ -26,8 +26,8 @@ You need to replace the stars with your Mapbox Access Token which is hardcoded i
 
 **Run the Flask Application:**
 
-    ```bash
-    python3 -u src/main.py > app.log 2>&1
-    ```
+```bash
+python3 -u src/main.py > app.log 2>&1
+```
 
 Open your web browser and navigate to `http://127.0.0.1:5001` or `http://localhost:5001`.
