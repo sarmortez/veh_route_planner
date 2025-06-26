@@ -1,5 +1,6 @@
 # Vehicle Route Planner
-## Setap and Running Locally
+## Setup and Running Locally
+
 **Navigate to the Project Directory:**
 
     Use the `cd` command to navigate into the extracted `veh_route_planner` directory.
