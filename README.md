@@ -3,16 +3,16 @@
 
 **Navigate to the Project Directory:**
 
-    Use the `cd` command to navigate into the extracted `veh_route_planner` directory.
+Use the `cd` command to navigate into the extracted `veh_route_planner` directory.
     ```bash
     cd path/to/your/veh_route_planner
     ```
 
 **Create and Activate a Virtual Environment (Recommended):**
 
-    -   Create: `python -m venv venv`
-    -   Activate (Windows): `.\venv\Scripts\activate`
-    -   Activate (macOS/Linux): `source venv/bin/activate`
+-   Create: `python -m venv venv`
+-   Activate (Windows): `.\venv\Scripts\activate`
+-   Activate (macOS/Linux): `source venv/bin/activate`
 
 **Install Dependencies:**
 
@@ -22,7 +22,7 @@
 
 **Mapbox Access Token :**
 
-    You need to replace the stars with your Mapbox Access Token which is hardcoded in both `src/static/js/app.js` and 'src/main.py'.
+You need to replace the stars with your Mapbox Access Token which is hardcoded in both `src/static/js/app.js` and 'src/main.py'.
 
 **Run the Flask Application:**
 
